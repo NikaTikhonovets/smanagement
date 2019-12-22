@@ -1,0 +1,11 @@
+.users-table {
+  width: 100%;
+
+  &__name {
+    min-width: 150px;
+  }
+
+  &__id {
+    min-width: 50px;
+  }
+}

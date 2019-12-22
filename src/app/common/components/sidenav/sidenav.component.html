@@ -1,0 +1,20 @@
+<mat-drawer-container class="sidenav-container mat-typography" autosize>
+  <mat-drawer class="sidenav__panel" [ngClass]="{'opened': isExpanded}" mode="side" disableClose="true" opened="true">
+    <button mat-button (click)="isExpanded = !isExpanded" [disableRipple]="true">
+      <mat-icon class="sidenav__menu-icon" *ngIf="isExpanded; else menuIcon">menu_open</mat-icon>
+
+      <ng-template #menuIcon>
+        <mat-icon class="sidenav__menu-icon">menu</mat-icon>
+      </ng-template>
+    </button>
+
+    <mat-nav-list>
+      <a class="sidenav__link" mat-list-item *ngFor="let route of routes" [routerLink]="route.url" [routerLinkActive]="'active'">
+        <mat-icon mat-list-icon>{{ route.iconName }}</mat-icon>
+        <h4 class="sidenav__label" mat-line *ngIf="isExpanded">{{ route.label }}</h4>
+      </a>
+    </mat-nav-list>
+  </mat-drawer>
+
+  <ng-content></ng-content>
+</mat-drawer-container>
