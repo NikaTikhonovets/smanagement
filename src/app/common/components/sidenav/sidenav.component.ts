@@ -8,14 +8,19 @@ interface RouteItem {
 
 const ROUTES: RouteItem[] = [
   {
-    label: 'Users',
-    url: ['users'],
+    label: 'Persons',
+    url: ['persons'],
     iconName: 'group'
   },
   {
     label: 'Tasks',
     url: ['tasks'],
     iconName: 'list'
+  },
+  {
+    label: 'Skills',
+    url: ['skills'],
+    iconName: 'how_to_reg'
   }
 ];
 
@@ -27,5 +32,5 @@ const ROUTES: RouteItem[] = [
 })
 export class SidenavComponent {
   public routes: RouteItem[] = ROUTES;
-  public isExpanded = false;
+  public isExpanded = true;
 }

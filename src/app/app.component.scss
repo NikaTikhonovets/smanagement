@@ -4,6 +4,17 @@
   height: 100%;
 }
 
-.page-container {
-  padding: 40px;
+.page{
+  &-container {
+    background-color: $sm-green;
+    padding: 20px 20px 20px 0;
+    min-height: 100%;
+  }
+
+  &-content {
+    padding: 20px;
+    background-color: $sm-white;
+    border-radius: $sm-border-radius;
+    min-height: calc(100vh - 40px);
+  }
 }

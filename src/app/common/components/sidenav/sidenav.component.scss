@@ -6,7 +6,7 @@ $border-size: 4px;
     height: 100%;
 
     .mat-drawer {
-      background-color: $sm-grey;
+      background-color: $sm-green;
       border: none;
 
       &-content {
@@ -26,43 +26,61 @@ $border-size: 4px;
     .sidenav__label.mat-line {
       font-weight: 500;
     }
+
+    &.opened {
+      ::ng-deep .mat-drawer-content {
+        margin-left: 170px !important;
+      }
+    }
+
+    ::ng-deep .mat-drawer-content {
+      margin-left: 70px !important;
+      transition: margin-left 500ms;
+    }
   }
 
-
   &__panel {
+    transition: width 500ms;
+    width: 70px;
+
+
     &.opened {
-      min-width: 170px;
+      width: 170px;
     }
   }
 
   &__menu-icon {
     font-size: 32px;
-    color: $sm-black;
+    color: $sm-yellow;
+    margin-top: 20px;
   }
 
   &__link {
-    color: $sm-dark-grey;
+    color: $sm-yellow;
     font-weight: bold;
 
     &:not(.active) {
       padding-left: $border-size;
+      opacity: 0.5;
     }
 
     .mat-icon {
-      color: $sm-dark-grey;
+      color: $sm-yellow;
+      opacity: 0.5;
     }
 
     &.active {
-      border-left: $border-size solid $sm-light-blue;
+      border-left: $border-size solid $sm-yellow;
 
       .mat-icon,
       .sidenav__label.mat-line {
-        color: $sm-black;
+        color: $sm-yellow;
+        opacity: 1;
       }
     }
   }
 }
 
 .mat-drawer-container {
-  color: $sm-black;
+  color: $sm-green;
 }

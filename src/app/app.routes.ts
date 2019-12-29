@@ -2,7 +2,7 @@ import {Routes} from '@angular/router';
 
 export const APP_ROUTES: Routes = [
   {
-    path: 'users',
+    path: 'persons',
     loadChildren: () => import('./users/users.module').then(module => module.UsersModule)
   },
   {
@@ -11,6 +11,6 @@ export const APP_ROUTES: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'users'
+    redirectTo: 'persons'
   }
 ];

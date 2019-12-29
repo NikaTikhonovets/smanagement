@@ -8,6 +8,6 @@ import { PERSONS } from '../../../shared/constants/persons.const';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class UsersListComponent {
-  displayedColumns: string[] = ['personId', 'name', 'skills'];
+  displayedColumns: string[] = ['personId', 'name', 'skills', 'actions'];
   dataSource = PERSONS;
 }
