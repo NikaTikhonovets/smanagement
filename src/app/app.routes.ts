@@ -3,7 +3,7 @@ import {Routes} from '@angular/router';
 export const APP_ROUTES: Routes = [
   {
     path: 'persons',
-    loadChildren: () => import('./users/users.module').then(module => module.UsersModule)
+    loadChildren: () => import('./persons/persons.module').then(module => module.PersonsModule)
   },
   {
     path: 'tasks',

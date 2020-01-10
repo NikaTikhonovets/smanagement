@@ -1,12 +1,8 @@
 @import "~src/assets/styles/variables";
+@import "~src/assets/styles/common-styles";
 
 .users-table {
-  width: 100%;
-  color: $sm-green;
-  box-shadow: none;
-  border: 3px dashed $sm-green;
-  border-radius: $sm-border-radius;
-  background: none;
+  @extend %sm-table;
 
   .mat-cell {
     color: $sm-green;
@@ -16,6 +12,9 @@
     height: unset;
     background-color: $sm-green;
     color: $sm-white;
+    font-size: 12px;
+    min-height: unset;
+    padding: 3px 10px;
   }
 
   &__name {

@@ -8,6 +8,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { RouterModule } from '@angular/router';
 import { APP_ROUTES } from './app.routes';
 import { CommonComponentsModule } from './common/common.module';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule( {
   declarations: [
@@ -19,6 +20,7 @@ import { CommonComponentsModule } from './common/common.module';
     BrowserAnimationsModule,
     LayoutModule,
     MatSidenavModule,
+    HttpClientModule,
     RouterModule.forRoot( [ ...APP_ROUTES ] ),
   ],
   providers: [],

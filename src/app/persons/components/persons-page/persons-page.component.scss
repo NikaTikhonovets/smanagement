@@ -1,0 +1,23 @@
+@import "~src/assets/styles/variables";
+
+.page {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    &-title {
+      margin-bottom: 40px;
+    }
+
+    &-actions {
+      .primary-button {
+        color: $sm-yellow;
+        border: 2px solid $sm-green;
+
+        &:hover {
+          border: 2px dashed $sm-green;
+        }
+      }
+    }
+  }
+
+}

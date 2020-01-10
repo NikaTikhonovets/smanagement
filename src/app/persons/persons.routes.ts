@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { UsersPageComponent } from './components/users-page/users-page.component';
+import { PersonsPageComponent } from './components/persons-page/persons-page.component';
 
 export const USERS_ROUTES: Routes = [
   {
@@ -8,7 +8,7 @@ export const USERS_ROUTES: Routes = [
       {
         path: '',
         pathMatch: 'full',
-        component: UsersPageComponent
+        component: PersonsPageComponent
       }
     ]
   }

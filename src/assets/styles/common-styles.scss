@@ -1,0 +1,10 @@
+@import "~src/assets/styles/variables";
+
+%sm-table {
+  width: 100%;
+  color: $sm-green;
+  box-shadow: none;
+  border: 3px dashed $sm-green;
+  border-radius: $sm-border-radius;
+  background: none;
+}
