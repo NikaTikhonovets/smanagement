@@ -1,6 +1,5 @@
 <mat-drawer-container class="sidenav-container mat-typography" autosize [ngClass]="{'opened': isExpanded}">
   <mat-drawer class="sidenav__panel" [ngClass]="{'opened': isExpanded}" mode="side" disableClose="true" opened="true">
-    <span *ngIf="isExpanded">SManagement</span>
     <button mat-button (click)="isExpanded = !isExpanded" [disableRipple]="true">
       <mat-icon class="sidenav__menu-icon" *ngIf="isExpanded; else menuIcon">menu_open</mat-icon>
 
