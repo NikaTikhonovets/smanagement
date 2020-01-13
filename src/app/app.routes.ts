@@ -10,6 +10,10 @@ export const APP_ROUTES: Routes = [
     loadChildren: () => import('./tasks/tasks.module').then(module => module.TasksModule)
   },
   {
+    path: 'skills',
+    loadChildren: () => import('./skills/skills.module').then(module => module.SkillsModule)
+  },
+  {
     path: '**',
     redirectTo: 'persons'
   }

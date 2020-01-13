@@ -3,15 +3,110 @@ export const SKILLS = [
     skillId: 1,
     name: 'Research',
     type: 'ANALYTICAL_SKILLS',
-    tasks: [],
-    persons: []
+    tasks: [{
+      taskId: 2,
+      name: 'task_2_',
+      startTime: null,
+      finishTime: null,
+      skills: []
+    },
+      {
+        taskId: 3,
+        name: 'task_3_',
+        startTime: null,
+        finishTime: null,
+        skills: []
+      }],
+    persons: [{
+      personId: 1,
+      name: 'Emma',
+      skills: [  {
+        skillId: 1,
+        name: 'Research',
+        type: 'ANALYTICAL_SKILLS',
+        tasks: [],
+        persons: []
+      },  {
+        skillId: 2,
+        name: 'Forecasting',
+        type: 'ANALYTICAL_SKILLS',
+        tasks: [],
+        persons: []
+      }]
+    },
+      {
+        personId: 2,
+        name: 'Olivia',
+        skills: [  {
+          skillId: 5,
+          name: 'Data and metrics interpreting',
+          type: 'ANALYTICAL_SKILLS',
+          tasks: [],
+          persons: []
+        },
+          {
+            skillId: 6,
+            name: 'Reporting',
+            type: 'ANALYTICAL_SKILLS',
+            tasks: [],
+            persons: []
+          },
+          {
+            skillId: 7,
+            name: 'Organization',
+            type: 'ANALYTICAL_SKILLS',
+            tasks: [],
+            persons: []
+          }]
+      }]
   },
   {
     skillId: 2,
     name: 'Forecasting',
     type: 'ANALYTICAL_SKILLS',
     tasks: [],
-    persons: []
+    persons: [{
+      personId: 1,
+      name: 'Emma',
+      skills: [  {
+        skillId: 1,
+        name: 'Research',
+        type: 'ANALYTICAL_SKILLS',
+        tasks: [],
+        persons: []
+      },  {
+        skillId: 2,
+        name: 'Forecasting',
+        type: 'ANALYTICAL_SKILLS',
+        tasks: [],
+        persons: []
+      }]
+    },
+      {
+        personId: 2,
+        name: 'Olivia',
+        skills: [  {
+          skillId: 5,
+          name: 'Data and metrics interpreting',
+          type: 'ANALYTICAL_SKILLS',
+          tasks: [],
+          persons: []
+        },
+          {
+            skillId: 6,
+            name: 'Reporting',
+            type: 'ANALYTICAL_SKILLS',
+            tasks: [],
+            persons: []
+          },
+          {
+            skillId: 7,
+            name: 'Organization',
+            type: 'ANALYTICAL_SKILLS',
+            tasks: [],
+            persons: []
+          }]
+      }]
   },
   {
     skillId: 3,
@@ -24,7 +119,20 @@ export const SKILLS = [
     skillId: 4,
     name: 'Data mining',
     type: 'ANALYTICAL_SKILLS',
-    tasks: [],
+    tasks: [{
+      taskId: 2,
+      name: 'task_2_',
+      startTime: null,
+      finishTime: null,
+      skills: []
+    },
+      {
+        taskId: 3,
+        name: 'task_3_',
+        startTime: null,
+        finishTime: null,
+        skills: []
+      }],
     persons: []
   },
   {
@@ -53,13 +161,67 @@ export const SKILLS = [
     name: 'Communication',
     type: 'ANALYTICAL_SKILLS',
     tasks: [],
-    persons: []
+    persons: [{
+      personId: 1,
+      name: 'Emma',
+      skills: [  {
+        skillId: 1,
+        name: 'Research',
+        type: 'ANALYTICAL_SKILLS',
+        tasks: [],
+        persons: []
+      },  {
+        skillId: 2,
+        name: 'Forecasting',
+        type: 'ANALYTICAL_SKILLS',
+        tasks: [],
+        persons: []
+      }]
+    },
+      {
+        personId: 2,
+        name: 'Olivia',
+        skills: [  {
+          skillId: 5,
+          name: 'Data and metrics interpreting',
+          type: 'ANALYTICAL_SKILLS',
+          tasks: [],
+          persons: []
+        },
+          {
+            skillId: 6,
+            name: 'Reporting',
+            type: 'ANALYTICAL_SKILLS',
+            tasks: [],
+            persons: []
+          },
+          {
+            skillId: 7,
+            name: 'Organization',
+            type: 'ANALYTICAL_SKILLS',
+            tasks: [],
+            persons: []
+          }]
+      }]
   },
   {
     skillId: 9,
     name: 'Diagnostics',
     type: 'ANALYTICAL_SKILLS',
-    tasks: [],
+    tasks: [{
+      taskId: 2,
+      name: 'task_2_',
+      startTime: null,
+      finishTime: null,
+      skills: []
+    },
+      {
+        taskId: 3,
+        name: 'task_3_',
+        startTime: null,
+        finishTime: null,
+        skills: []
+      }],
     persons: []
   },
   {

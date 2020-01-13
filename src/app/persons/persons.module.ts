@@ -13,10 +13,11 @@ import {
   MatSelectModule,
   MatTableModule
 } from '@angular/material';
-import { AddPersonDialogComponent } from './components/dialogs/add-person-dialog/add-person-dialog.component';
+import { PersonDialogComponent } from './components/dialogs/person-dialog/person-dialog.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [PersonsListComponent, PersonsPageComponent, AddPersonDialogComponent],
+  declarations: [PersonsListComponent, PersonsPageComponent, PersonDialogComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(USERS_ROUTES),
@@ -26,8 +27,9 @@ import { AddPersonDialogComponent } from './components/dialogs/add-person-dialog
     MatButtonModule,
     MatIconModule,
     MatDialogModule,
-    MatSelectModule
+    MatSelectModule,
+    ReactiveFormsModule
   ],
-  entryComponents: [AddPersonDialogComponent]
+  entryComponents: [PersonDialogComponent]
 })
 export class PersonsModule { }

@@ -1,0 +1,15 @@
+@import "~src/assets/styles/variables";
+@import "~src/assets/styles/common-styles";
+
+.tasks-table {
+  @extend %sm-table;
+
+  .mat-cell {
+    color: $sm-green;
+  }
+
+  & &__actions.mat-cell {
+    text-align: right;
+    color: $sm-green;
+  }
+}

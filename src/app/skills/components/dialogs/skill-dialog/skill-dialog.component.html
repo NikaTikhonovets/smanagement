@@ -1,0 +1,28 @@
+<form class="sm-form" [formGroup]="skillForm" (ngSubmit)="onSubmit()">
+    <h1 mat-dialog-title>{{data.isEdit ? 'Edit' : 'Add'}} Skill</h1>
+    <div mat-dialog-content class="sm-form__content">
+        <mat-form-field>
+            <input matInput placeholder="Name" formControlName="name" required>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Type" formControlName="type" required>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-select placeholder="Tasks" multiple formControlName="tasks">
+                <mat-option *ngFor="let task of taskOptions" [value]="task.taskId">{{task.name}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-select placeholder="Persons" multiple formControlName="persons">
+                <mat-option *ngFor="let person of personOptions" [value]="person.personId">{{person.name}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div mat-dialog-actions align="end">
+        <button mat-button [mat-dialog-close]="null">Cancel</button>
+        <button mat-button type="submit" [disabled]="!skillForm.valid">Save</button>
+    </div>
+</form>

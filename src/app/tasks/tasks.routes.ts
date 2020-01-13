@@ -1,14 +1,14 @@
 import { Routes } from '@angular/router';
-import { TasksListComponent } from './tasks-list/tasks-list.component';
+import { TasksPageComponent } from './components/tasks-page/tasks-page.component';
 
-export const TASK_ROUTES: Routes = [
+export const TASKS_ROUTES: Routes = [
   {
     path: '',
     children: [
       {
         path: '',
         pathMatch: 'full',
-        component: TasksListComponent
+        component: TasksPageComponent
       }
     ]
   }

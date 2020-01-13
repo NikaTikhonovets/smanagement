@@ -3,7 +3,7 @@ import { Skill } from './skill';
 export class Task {
   taskId: number;
   name: string;
-  startTime: Date;
-  finishTime: Date;
+  startTime: Date | string;
+  finishTime: Date | string;
   skills: Skill[];
 }

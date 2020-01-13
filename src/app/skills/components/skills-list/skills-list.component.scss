@@ -1,0 +1,11 @@
+@import "~src/assets/styles/variables";
+@import "~src/assets/styles/common-styles";
+
+.skills-table {
+  @extend %sm-table;
+
+  & &__actions.mat-cell {
+    text-align: right;
+    color: $sm-green;
+  }
+}

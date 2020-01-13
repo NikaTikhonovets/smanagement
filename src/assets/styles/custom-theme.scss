@@ -1,4 +1,4 @@
-
+@import 'variables';
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @import '../../../node_modules/@angular/material/theming';
@@ -13,35 +13,35 @@
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
 $my-blue: (
-        50: #7fdddd,
-        100: #7faedd,
-        200: #7f7fdd,
-        300: #7faedd,
-        400: #7faedd,
-        500: #7faedd,
-        600: #7faedd,
-        700: #7faedd,
-        800: #7faedd,
-        900: #7faedd,
-        A100: #7faedd,
-        A200: #7faedd,
-        A400: #7faedd,
-        A700: #7faedd,
+        50: $sm-light-green,
+        100: $sm-green,
+        200: $sm-dark-green,
+        300: $sm-green,
+        400: $sm-green,
+        500: $sm-green,
+        600: $sm-green,
+        700: $sm-green,
+        800: $sm-green,
+        900: $sm-green,
+        A100: $sm-green,
+        A200: $sm-green,
+        A400: $sm-green,
+        A700: $sm-green,
         contrast: (
-                50: white,
-                100: white,
-                200: white,
-                300: white,
-                400: white,
-                500: white,
-                600: white,
-                700: white,
-                800: white,
-                900: white,
-                A100: white,
-                A200: white,
-                A400: white,
-                A700: white,
+                50: $sm-white,
+                100: $sm-white,
+                200: $sm-white,
+                300: $sm-white,
+                400: $sm-white,
+                500: $sm-white,
+                600: $sm-white,
+                700: $sm-white,
+                800: $sm-white,
+                900: $sm-white,
+                A100: $sm-white,
+                A200: $sm-white,
+                A400: $sm-white,
+                A700: $sm-white,
         )
 );
 
